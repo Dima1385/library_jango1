@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Книги</title>
+</head>
+<body>
+    <h1>Список книг у бібліотеці</h1>
+    <ul>
+        {% for book in books %}
+            <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Повернутися на головну сторінку</a>
+</body>
+</html>
